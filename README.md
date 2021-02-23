@@ -1,64 +1,82 @@
-#### DBoM Open Source Project Template Instructions
+# in-toto-dbom-wrapper
 
-1. Create a new project based on this template
-3. Update the README, replacing the contents below as prescribed
-3. Delete these instructions and everything up to the _Project Title_ from the README.
+in-toto-dbom-wrapper is a package that wraps the in-toto package so that the in-toto layouts and links are able to be stored in and retrieved from a Digital Bill of Materials (DBoM)
 
+## Getting Started
 
+### Installation
 
-# Project Title
+installed via [`pip`](https://pypi.org/project/pip/). See
 
-**Description**:  
+#### python 2.7
+```shell
+pip install ./
+```
 
-Put a meaningful, short, plain-language description of what
-this project is trying to accomplish and why it matters.
-Describe the problem(s) this project solves.
-Describe how this software can improve the lives of its audience.
+#### python 3 >= 3.6
+```shell
+python3 -m pip install ./
+```
 
-Other things to include:
+### Environmental variables
 
-  - Link to the changelog
-  - Links to production or demo instances
+| Name            | Description                        |
+|-----------------|------------------------------------|
+| CHANNEL_ID      | DBoM channel to access             |
+| GATEWAY_ADDRESS | Address of the chainsource gateway |
+| REPO_ID         | DBoM repo to access                |
+| ASSET_ID        | DBoM asset to access               |
 
-**Screenshot**
+### Available Command
 
- If the software has visual components, place a screenshot after the description
+| Name                        |
+|-----------------------------|
+| in-toto-record-dbom-wrapper |
+| in-toto-run-dbom-wrapper    |
+| in-toto-verify-dbom-wrapper |
 
+#### Command Options
 
-## Installation
+| Name             | Description                        |
+|------------------|------------------------------------|
+| --assetID        | DBoM asset id                      |
+| --channelID      | DBoM channel to access             |
+| --gatewayAddress | Address of the chainsource gateway |
+| --inTotoHelp     | Get the in-toto help               |
+| --repoID         | DBoM repo to access                |
 
-Detailed instructions on how to install, configure, and get the project running.
-This should be frequently tested to ensure reliability. 
+### Available Libraries
 
-## Configuration
+##### metadata-wrapper 
 
-If the software is configurable, describe it in detail, either here or in other documentation to which you link.
+###### save_layout
 
-## Usage
+| Name            | Required | Description                        |
+|-----------------|----------|------------------------------------|
+| asset_id        | true     | DBoM asset id                      |
+| channel_id      | false    | DBoM channel to access             |
+| gateway_address | false    | Address of the chainsource gateway |
+| path            | true     | name of the layout                 |
+| repo_id         | false    | DBoM repo to access                |
 
-Show users how to use the software.
-Be specific.
-Use appropriate formatting when showing code snippets.
+###### save_owner_key
 
-## How to test the software
+| Name            | Required | Description                        |
+|-----------------|----------|------------------------------------|
+| asset_id        | true     | DBoM asset id                      |
+| channel_id      | false    | DBoM channel to access             |
+| gateway_address | false    | Address of the chainsource gateway |
+| key             | true     | owner's key                        |
+| repo_id         | false    | DBoM repo to access                |
 
-If the software includes automated tests, detail how to run those tests.
+### See the [into-toto docs](https://github.com/in-toto/docs/blob/master/in-toto-spec.md) for more information about in-toto
 
+## Getting Help
 
-## Getting help
+If you have any queries on in-toto-dbom-wrapper, feel free to reach us on any of our [communication channels](https://github.com/DBOMproject/community/blob/master/COMMUNICATION.md) 
 
-If you have any queries on insert-project-name, feel free to reach us on any of our [communication channels](https://github.com/DBOMproject/community/blob/master/COMMUNICATION.md) 
+If you have questions, concerns, bug reports, etc, please file an issue in this repository's [issue tracker](https://github.com/DBOMproject/in-toto-dbom-wrapper/issues).
 
-**Example**
+## Getting Involved
 
-If you have questions, concerns, bug reports, etc, please file an issue in this repository's Issue Tracker.
-
-## Getting involved
-
-This section should detail why people should get involved and describe key areas you are
-currently focusing on; e.g., trying to get feedback on features, fixing certain bugs, building
-important pieces, etc.
-
-General instructions on _how_ to contribute should be stated with a link to [CONTRIBUTING](CONTRIBUTING.md).
-
-
+Find the instructions on how you can contribute in [CONTRIBUTING](CONTRIBUTING.md).
