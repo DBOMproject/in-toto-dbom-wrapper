@@ -55,7 +55,7 @@ OUT_HDLR.setLevel(logging.INFO)
 LOG.addHandler(OUT_HDLR)
 LOG.setLevel(logging.INFO)
 
-
+ASSET_ID = environ.get('ASSET_ID')
 CHANNEL_ID = environ.get('CHANNEL_ID')
 REPO_ID = environ.get('REPO_ID')
 GATEWAY_ADDRESS = environ.get('GATEWAY_ADDRESS')
@@ -93,7 +93,7 @@ def main():
     os.system('in-toto-run --help')
     sys.exit(1)
 
-  asset_id = child_args.assetID
+  asset_id = child_args.assetID if child_args.assetID is not None else ASSET_ID
   if asset_id is None:
     LOG.error("Missing AssetID")
     sys.exit(1)
