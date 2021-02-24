@@ -3,7 +3,6 @@
 in-toto-dbom-wrapper is a package that wraps the in-toto package so that the in-toto layouts and links are able to be stored in and retrieved from a Digital Bill of Materials (DBoM)
 
 ## Getting Started
-
 ### Installation
 
 installed via [`pip`](https://pypi.org/project/pip/). See
@@ -17,7 +16,6 @@ pip install ./
 ```shell
 python3 -m pip install ./
 ```
-
 ### Environmental variables
 
 | Name            | Description                        |
@@ -70,7 +68,9 @@ python3 -m pip install ./
 | repo_id         | false    | DBoM repo to access                |
 
 ### See the [into-toto docs](https://github.com/in-toto/docs/blob/master/in-toto-spec.md) for more information about in-toto
+## Next Steps
 
+To learn more about the wrapper, see this [example](example/README.md) which will walk through how the wrapper works
 ## Getting Help
 
 If you have any queries on in-toto-dbom-wrapper, feel free to reach us on any of our [communication channels](https://github.com/DBOMproject/community/blob/master/COMMUNICATION.md) 
