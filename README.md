@@ -25,7 +25,7 @@ python3 -m pip install ./
 | REPO_ID         | DBoM repo to access                |
 | ASSET_ID        | DBoM asset to access               |
 
-### Available Command
+### Available Commands
 
 | Name                        |
 |-----------------------------|

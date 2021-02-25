@@ -12,7 +12,7 @@ in-toto-dbom-wrapper.
 
 - Machine 1
 
-    - Stand up a DBoM node using the [getting stated insturctions](https://dbom-project.readthedocs.io/en/latest/getting-started.html)
+    - Stand up a DBoM node using the [getting started insturctions](https://dbom-project.readthedocs.io/en/latest/getting-started.html)
 
     - Clone the in-toto demo repository
 
@@ -51,7 +51,7 @@ curl -f --location --request POST "$GATEWAY_ADDRESS/api/v1/repo/$REPO_ID/chan/$C
     "standardVersion": 1.0,
     "documentName": "Test Asset 01",
     "documentCreator": "DBoM Organisation",
-    "documentCreatedDate": "2020-10-01T10:06:47+0000",
+    "documentCreatedDate": "2021-10-01T10:06:47+0000",
     "assetType": "HardwareComponent",
     "assetSubType": "SubType1",
     "assetManufacturer": "DBoM Organisation",
