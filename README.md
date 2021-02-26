@@ -67,7 +67,7 @@ python3 -m pip install ./
 | key             | true     | owner's key                        |
 | repo_id         | false    | DBoM repo to access                |
 
-### See the [into-toto docs](https://github.com/in-toto/docs/blob/master/in-toto-spec.md) for more information about in-toto
+### See the [in-toto docs](https://github.com/in-toto/docs/blob/master/in-toto-spec.md) for more information about in-toto
 ## Next Steps
 
 To learn more about the wrapper, see this [example](example/README.md) which will walk through how the wrapper works
